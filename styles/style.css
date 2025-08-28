@@ -1,0 +1,124 @@
+:root{
+    --ColorFondoTexto: #d1ccc2;
+    --ColorFondo: #606455;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100dvh;
+}
+body {
+    height: 100dvh;
+    display: grid;
+    grid-template-rows: 10dvh 10dvh 10dvh 5dvh 5dvh;
+    align-items: center;
+    align-content: space-between;
+    font-family: Rubik, sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: var(--ColorFondo);
+}
+header, section{
+    display: grid;
+    justify-items: center;
+}
+header{
+    height: 100%;
+    grid-row: 1;
+    display: grid;
+    align-content: center;
+    border-bottom: 5px solid var(--ColorFondoTexto);
+}
+h1, h2, h3, p{
+    text-align: center;
+    color: var(--ColorFondoTexto)
+}
+p{
+    text-align: left;
+}
+.TextoGanador{
+    p{
+        font-size: large;
+        font-weight: bold;
+    }
+}
+.SeccionControles{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-row: 4;
+}
+.Controls{
+    border: 2px solid  var(--ColorFondoTexto);
+    padding: 10px;
+    height: min-content;
+}
+.Container{
+    margin-top: 0.2dvh;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    .Increment{
+        width: 15%;
+    }
+}
+.TituloControles{
+    border-bottom: 2px solid  var(--ColorFondoTexto);  
+    margin-bottom: 10px;
+}
+.titulo{
+    margin-top: 0.2dvh;
+    height: 100%;
+}
+.mi-boton{
+    width: 100%;
+    font-family: Rubik, sans-serif;
+    color: var(--ColorFondo)
+}
+.CanvasContainer{
+    grid-row: 2;
+}
+.Controls{
+    display: grid;
+}
+.Subtitulo{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    p{
+        width: 44px;
+        text-align: center;
+    }
+    .Numero{
+        width: 120px;  
+        text-align: left;
+    }
+}
+.ContainerComp{
+    display: flex;
+    width: min-content;
+    align-items: baseline;
+    gap: 10px;
+    p{
+        width: 120px;  
+        margin: 0; 
+    }
+    input{
+        width: 44px;
+        height: 19px;
+    }
+}
+footer{
+    border-top: 5px solid  var(--ColorFondoTexto);
+    margin: 10px 0;
+    background-color: var(--ColorFondo);
+    height: calc(100% - 5px);
+    display: grid;
+    align-content: center;
+    grid-row: 5;
+}
+.footer{
+    font-size: auto;
+}

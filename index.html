@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador Procesos</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="Titulos">
+        <h1 class="Titulo">SIMULACIÓN MULTIPROCESO</h1>
+    </header>
+    <section class="CanvasContainer">
+        <canvas id="Simulacion" width="600" height="200"></canvas>
+    </section>
+    <section class="TextoGanador">
+        <p>!!!!PREPARADOS, LISTOS, FUERA!!!!</p>
+    </section>
+    <section class="SeccionControles">
+        <div class="Controls">
+            <div class="TituloControles"><h3>Contoles</h3></div>
+            <div class="Container CPU">
+                <p>CPU</p>
+                <input class="Increment" type="number" id="CPU" value="1" step="1" min="1">
+            </div>
+            <div class="Container HILOS">
+                <p>HILOS x CPU</p>
+                <input class="Increment" type="number" id="Hilos" value="2" step="1" min="1">
+            </div>
+            <div class="Container Competidores">
+                <p>Competidores</p>
+                <input class="Increment" type="number" id="NCompetidores" value="3" step="1" min="3" max="10">
+            </div>
+            <div class="Container">
+                <button class="mi-boton" onclick="IniciarAnimacion()">Iniciar</button>
+            </div>
+            <div>
+                <button class="mi-boton" onclick="Reseteo()">Reiniciar</button>
+            </div>
+        </div>
+        <div class="Controls">
+            <div class="TituloControles"><h3>Velocidad | Prioridad</h3></div>
+            <div class="Subtitulo">
+                <p class="Numero">Competidor</p>
+                <p>V</p>
+                <p>P</p>
+            </div>
+            <div id="CajaCompetidores">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h3 class="footer">@carlosinteriano_pan</h1>
+    </footer>
+    <script src="scripts/Clases/pista.js"></script>
+    <script src="scripts/Clases/corredor.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
