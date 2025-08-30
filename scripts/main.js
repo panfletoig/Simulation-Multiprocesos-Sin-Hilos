@@ -69,7 +69,7 @@ function InstanciarCompetidores(){
         velocidad.max = 10; //Le mueve 20 de valor maximo
         velocidad.step = 1; //Si se usa que aumente de 1 en 1
 
-        //Realiza lo mismo de arriva pero con prioridad
+        //Realiza lo mismo de arriba pero con prioridad
         let prioridad = document.createElement("input"); 
         prioridad.type = "number";
         prioridad.className = "Increment" 
