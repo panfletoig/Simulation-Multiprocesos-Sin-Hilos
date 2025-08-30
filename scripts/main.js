@@ -28,8 +28,8 @@ CPU.addEventListener("input", function(){
 });
 ///Se asegura que los valores esten en los rangos
 HILOS.addEventListener("input", function(){
-    if(HILOS.value > 3){
-        HILOS.value = 3;
+    if(HILOS.value > 2){
+        HILOS.value = 2;
     }
     else if(HILOS.value < 1){
         HILOS.value = 1;
@@ -40,8 +40,8 @@ HILOS.addEventListener("input", function(){
 NCompetidores.addEventListener("input", function(){
     if (NCompetidores.value < 3) {
         NCompetidores.value = 3;
-    }else if(NCompetidores.value > 10){
-        NCompetidores.value = 10;
+    }else if(NCompetidores.value > 6){
+        NCompetidores.value = 6;
     }; 
     InstanciarCompetidores(); //Genera espacio para darle velocidad y prioridad
     Reseteo(); //Resetea la competencia
